@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For Preelulu ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ffd6e5;--rose:#f486ae;--ink:#63394d}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden}
+body{font-family:'Quicksand',sans-serif;background:#ffeaf2;color:var(--ink);touch-action:manipulation}
+#sky{position:fixed;inset:0;z-index:-5;background:radial-gradient(circle at 15% 15%,#fff7fb 0 7%,transparent 28%),radial-gradient(circle at 85% 25%,#ffd3e4 0 8%,transparent 30%),linear-gradient(145deg,#fff1f6,#ffdbe8 45%,#ffc8dc)}
+#glow{position:fixed;width:70vw;height:70vw;max-width:430px;max-height:430px;border-radius:50%;background:#fff8fb99;filter:blur(45px);left:50%;top:35%;transform:translate(-50%,-50%);z-index:-4}
+.star{position:fixed;color:#fff;animation:twinkle 2.5s ease-in-out infinite;z-index:-2;text-shadow:0 1px 8px #f486ae}
+@keyframes twinkle{50%{opacity:.25;transform:scale(.65)}}
+.petal{position:fixed;top:-30px;animation:fall linear forwards;z-index:20;pointer-events:none}
+@keyframes fall{to{transform:translateY(115vh) rotate(520deg);opacity:.1}}
+.screen{position:absolute;inset:0;padding:28px 20px 70px;display:flex;align-items:center;justify-content:center;text-align:center;opacity:0;transform:translateY(20px) scale(.98);pointer-events:none;transition:.7s ease}
+.screen.on{opacity:1;transform:none;pointer-events:auto}.wrap{width:min(520px,100%)}
+.kicker{font-weight:700;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#b85e80}
+h1,h2{font-family:'Caveat',cursive;font-weight:600;color:#9b4d6d;text-shadow:0 3px 12px #fff}
+h1{font-size:clamp(3.5rem,17vw,6rem);line-height:.83;margin:16px 0}
+h2{font-size:clamp(2.5rem,11vw,4rem);line-height:.95;margin:12px 0}
+p{font-size:1.04rem;line-height:1.7;color:#75475b;margin:12px 0}
+.btn{border:0;border-radius:999px;padding:15px 28px;margin:9px 4px;background:linear-gradient(135deg,#ffb9d2,#f28aae);color:#fff;font-family:'Quicksand',sans-serif;font-weight:700;font-size:1rem;cursor:pointer;box-shadow:0 10px 24px #c7658a40;transition:.2s;border:2px solid #fff9}
+.btn:active{transform:scale(.95)}.ghost{background:#fff8;border:1px solid #fff;color:#a05270}
+.envelope{width:230px;height:160px;margin:28px auto;position:relative;cursor:pointer;filter:drop-shadow(0 18px 20px #a9517540)}
+.envbody{position:absolute;inset:20px 0 0;background:#ffabc9;border-radius:14px;overflow:hidden}
+.envbody:after,.envbody:before{content:"";position:absolute;bottom:0;border-style:solid}
+.envbody:before{left:0;border-width:0 115px 88px;border-color:transparent transparent #ff9fc4}
+.envbody:after{right:0;border-width:0 115px 88px;border-color:transparent transparent #ff8db8}
+.flap{position:absolute;top:20px;left:0;width:0;height:0;border-left:115px solid transparent;border-right:115px solid transparent;border-top:86px solid #ffc9dc;transform-origin:top;z-index:3;transition:.7s}
+.envelope.open .flap{transform:rotateX(180deg)}
+.heartseal{position:absolute;z-index:5;left:50%;top:70px;transform:translate(-50%,-50%);font-size:38px}
+.card{background:#fffafd;color:var(--ink);border-radius:24px;padding:18px;text-align:left;margin:10px 0;box-shadow:0 10px 25px #b65c7c25;cursor:pointer;border:2px solid #fff}
+.card strong{font-family:'Caveat',cursive;font-size:1.55rem;font-weight:600;color:#9b4d6d}
+.reveal{display:none;color:#75475b;margin-top:7px;line-height:1.5}.card.open .reveal{display:block}
+.letter{background:linear-gradient(135deg,#fffdfd,#fff0f6);color:#5f374b;border-radius:18px;padding:27px;text-align:left;box-shadow:0 18px 45px #a44e6b30;max-height:60vh;overflow:auto;border:2px solid #fff}
+.letter:before{content:"♡";float:right;font-family:'Caveat';font-size:38px;color:#f28aae}
+.letter p{color:#674055;font-family:'Caveat',cursive;font-size:1.38rem;line-height:1.45}
+.letter h2{font-size:2.9rem;margin-top:0}
+.cake{font-size:110px;line-height:1;filter:drop-shadow(0 14px 18px #a34f7040);animation:bob 2s ease-in-out infinite;cursor:pointer}
+@keyframes bob{50%{transform:translateY(-8px)}}.hidden{display:none!important}
+#dots{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);display:flex;gap:7px;z-index:50}
+.dot{width:7px;height:7px;border-radius:50%;background:#c7799738}.dot.on{background:#f486ae;box-shadow:0 0 10px #f486ae}
+#music{position:fixed;right:15px;top:15px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid #fff;background:#ffffff80;color:#a55272}
+.cat{font-size:52px;display:block;margin:10px}.bigheart{font-size:70px;animation:heartbeat 1.3s infinite}.tiny{font:12px 'Quicksand',sans-serif;color:#a96880}
+@keyframes heartbeat{50%{transform:scale(1.12)}}
+
+#gate{
+  position:fixed;inset:0;z-index:1000;
+  display:flex;align-items:center;justify-content:center;
+  padding:25px;text-align:center;
+  background:
+    radial-gradient(circle at 20% 15%,#fff 0 6%,transparent 25%),
+    radial-gradient(circle at 85% 80%,#ffd0e1 0 8%,transparent 28%),
+    linear-gradient(145deg,#fff1f6,#ffd6e5 50%,#ffc2d9);
+  transition:opacity .8s ease,visibility .8s ease;
+}
+#gate.hide{opacity:0;visibility:hidden;pointer-events:none}
+.gate-card{
+  width:min(390px,100%);padding:34px 24px 30px;
+  background:#fffafdcc;border:2px solid #fff;border-radius:30px;
+  box-shadow:0 25px 70px #a44e6b35;
+  backdrop-filter:blur(12px);
+}
+.gate-heart{font-size:54px;animation:heartbeat 1.3s infinite;margin-bottom:6px}
+.gate-card h2{margin:10px 0 4px;font-size:clamp(2.5rem,11vw,3.6rem)}
+.gate-card p{margin:5px 0 17px}
+.gate-card input{
+  width:100%;padding:15px 18px;border-radius:999px;
+  border:2px solid #f6b4ca;background:#fff;color:#70445a;
+  font:600 1rem 'Quicksand',sans-serif;outline:none;text-align:center;
+}
+.gate-card input:focus{border-color:#f486ae;box-shadow:0 0 0 4px #f486ae20}
+.wrong{min-height:26px;margin-top:7px;color:#9b4d6d;font:600 1rem 'Caveat',cursive}
+
+.cute-envelope{width:250px;height:185px;margin:25px auto;position:relative;cursor:pointer;filter:drop-shadow(0 18px 22px #a9517540);transition:.3s}
+.cute-envelope:active{transform:scale(.96)}
+.cute-envelope .envbody{position:absolute;left:10px;right:10px;top:45px;bottom:0;background:#ffabc9;border-radius:16px;overflow:hidden}
+.cute-envelope .envbody:before,.cute-envelope .envbody:after{content:"";position:absolute;bottom:0;border-style:solid}
+.cute-envelope .envbody:before{left:0;border-width:0 115px 90px;border-color:transparent transparent #ff9fc4}
+.cute-envelope .envbody:after{right:0;border-width:0 115px 90px;border-color:transparent transparent #ff8db8}
+.cute-envelope .flap{position:absolute;top:45px;left:10px;width:0;height:0;border-left:115px solid transparent;border-right:115px solid transparent;border-top:88px solid #ffc9dc;transform-origin:top;z-index:3;transition:.7s}
+.cute-envelope.open .flap{transform:rotateX(180deg)}
+.cute-envelope .heartseal{top:92px}
+.bow{position:absolute;top:12px;left:50%;transform:translateX(-50%);font-size:48px;z-index:7;filter:drop-shadow(0 4px 5px #a64e7044);animation:bowbob 1.8s ease-in-out infinite}
+@keyframes bowbob{50%{transform:translateX(-50%) rotate(-4deg) scale(1.04)}}
+.flower{position:absolute;z-index:8;font-size:28px;filter:drop-shadow(0 3px 4px #a64e7040)}
+.f1{left:-2px;top:48px;transform:rotate(-14deg)}.f2{right:-2px;top:52px;transform:rotate(12deg)}
+.love-slider{margin:25px 4px 8px;position:relative;padding-top:8px}
+.love-slider input{width:100%;appearance:none;background:transparent;position:relative;z-index:4}
+.love-slider input::-webkit-slider-runnable-track{height:13px;border-radius:99px;background:#f8c8d9}
+.love-slider input::-webkit-slider-thumb{appearance:none;width:30px;height:30px;border-radius:50%;background:#f486ae;border:4px solid white;box-shadow:0 4px 12px #a44e6b44;margin-top:-8px}
+.love-slider input::-moz-range-track{height:13px;border-radius:99px;background:#f8c8d9}
+.love-slider input::-moz-range-thumb{width:23px;height:23px;border-radius:50%;background:#f486ae;border:4px solid white}
+.slider-track{position:absolute;left:0;right:0;top:16px;height:13px;border-radius:99px;background:#f8c8d9;overflow:hidden;pointer-events:none}
+.slider-fill{height:100%;width:0;background:linear-gradient(90deg,#ffb3cf,#f486ae)}
+.slider-heart{position:absolute;top:50%;transform:translate(-50%,-50%);left:0;font-size:27px;color:#fff;text-shadow:0 2px 7px #9b4d6d66;transition:left .08s}
+.slider-labels{display:flex;justify-content:space-between;font-size:12px;color:#a96880;margin-top:4px}
+.btn.locked{opacity:.45;filter:grayscale(.2)}
+</style>
+</head>
+<body>
+<div id="gate">
+  <div class="gate-card">
+    <div class="gate-heart">💗</div>
+    <div class="kicker">just one tiny question...</div>
+    <h2>What's my name?</h2>
+    <p>Only someone who knows me gets to enter. ♡</p>
+    <input id="password" type="text" autocomplete="off" autocapitalize="none"
+           placeholder="Type my name..." aria-label="What's my name?">
+    <button class="btn" onclick="unlock()">Enter ♡</button>
+    <div id="wrong" class="wrong"></div>
+  </div>
+</div>
+
+<div id="sky"></div><div id="glow"></div><button id="music" onclick="toggleMusic()">♫</button>
+<audio id="musicAudio" loop preload="auto">
+  <source src="Dude-Orchestral-Suite-MassTamilan.dev.mp3" type="audio/mpeg">
+</audio><div id="dots"></div>
+
+<section class="screen on" id="s1"><div class="wrap">
+<span class="kicker">a tiny surprise for you</span>
+<h1>Hey<br>Preelulu ♡</h1>
+<p>I made you a little corner of the internet.<br>Because a normal birthday message felt too ordinary.</p>
+<div class="cute-envelope" onclick="openEnv()">
+  <div class="bow">🎀</div>
+  <div class="flower f1">🌸</div><div class="flower f2">🌷</div>
+  <div class="envbody"></div><div class="flap"></div>
+  <div class="heartseal">💗</div>
+</div>
+<div class="tiny">tap the little envelope</div>
+</div></section>
+
+<section class="screen" id="s2"><div class="wrap">
+<span class="kicker">today is special</span><h1>Happy<br>Birthday, Preelulu!</h1>
+<span class="cat">🎀 🐱 🎈</span><p>Happy Birthday, Preelulu. ❤️<br>Today, the whole little universe is celebrating you.</p>
+<button class="btn" onclick="go(3)">There's more ✨</button>
+</div></section>
+
+
+<section class="screen" id="s3"><div class="wrap">
+<span class="kicker">one tiny test for you</span>
+<h2>How much do you mean to me? 💗</h2>
+<div class="cat">🐰🎀</div>
+<p>Hmm... I don't think words can measure this one.</p>
+<div class="love-slider">
+  <div class="slider-track"><div class="slider-fill" id="sliderFill"></div><div class="slider-heart" id="sliderHeart">♡</div></div>
+  <input id="loveSlider" type="range" min="0" max="100" value="0" aria-label="How much do you mean to me">
+  <div class="slider-labels"><span>A little</span><span>Everything ❤️</span></div>
+</div>
+<p id="sliderMessage" class="tiny">Slide it all the way. I won't accept anything less. 😌</p>
+<button class="btn locked" id="sliderNext" onclick="go(4)" disabled>Continue ♡</button>
+</div></section>
+<section class="screen" id="s4"><div class="wrap">
+<span class="kicker">little things</span><h2>Things I love<br>about you 🌷</h2>
+<p class="tiny">Tap each one.</p>
+<div class="card" onclick="this.classList.toggle('open')"><strong>🌸 Your innocence</strong><div class="reveal">There is something so genuinely beautiful about the way you can be completely yourself.</div></div>
+<div class="card" onclick="this.classList.toggle('open')"><strong>🫶 The way you care</strong><div class="reveal">You notice little things. Sometimes you don't even realise how much that means.</div></div>
+<div class="card" onclick="this.classList.toggle('open')"><strong>✨ Your smile</strong><div class="reveal">It has a ridiculous ability to make an ordinary moment feel a little better.</div></div>
+<div class="card" onclick="this.classList.toggle('open')"><strong>🌙 Just you</strong><div class="reveal">You don't have to be perfect. Being you is already pretty special to me.</div></div>
+<button class="btn" onclick="go(5)">Okay... one question 💗</button>
+</div></section>
+
+<section class="screen" id="s5"><div class="wrap">
+<span class="kicker">very serious question</span><h2>How much do you think I love you?</h2><span class="cat">🐱💗</span>
+<button class="btn" onclick="choice('Nice try 😌')">A little</button><button class="btn" onclick="choice('Getting warmer... 🥺')">Quite a lot</button><button class="btn" onclick="choice('Exactly. You already knew. ❤️')">More than I can explain</button>
+<p id="answer"></p><button class="btn ghost" onclick="go(6)">I wrote you a letter →</button>
+</div></section>
+
+<section class="screen" id="s6"><div class="wrap">
+<span class="kicker">from me, to you</span>
+<div class="letter">
+<h2>My dear Preelulu,</h2>
+<p>May this year be filled with nothing but happiness for you. May you continue to spread your wings of love on every soul you touch.</p>
+<p>It's been almost a year since you came into my life and it's simply the greatest time of my life so far.</p>
+<p>To earn your love is the best thing that has ever happened to me. May the universe bless you with abundance of joy, peace and love!</p>
+<p>Happy Birthday, my Preelulu. ❤️</p>
+<p>— Malulu</p></div>
+<button class="btn" onclick="go(7)">One last little surprise 🎂</button>
+</div></section>
+
+<section class="screen" id="s7"><div class="wrap">
+<span class="kicker">make a wish</span><h2>Okay, birthday girl...</h2>
+<p>Tap the cake and blow out the candles. 🎂</p>
+<div class="cake" id="cake" onclick="blow()">🎂</div>
+<p id="wish">Make a wish first. ✨</p>
+<div id="final" class="hidden"><div class="bigheart">💗</div><h2>Happy Birthday, Preelulu!</h2><p>May this year be gentle with you.<br>May you laugh more than you worry.<br>And may beautiful things find you.</p><p><strong>I'm really glad you're in my life. ❤️</strong></p><button class="btn ghost" onclick="go(1)">Replay ↻</button></div>
+</div></section>
+
+<script>
+let page=1;const N=7;
+for(let i=0;i<N;i++){let d=document.createElement('i');d.className='dot'+(i===0?' on':'');document.getElementById('dots').appendChild(d)}
+function go(n){document.getElementById('s'+page).classList.remove('on');page=n;document.getElementById('s'+page).classList.add('on');[...document.querySelectorAll('.dot')].forEach((d,i)=>d.classList.toggle('on',i===page-1));if(n===2)confetti()}
+function openEnv(){document.querySelector('.cute-envelope').classList.add('open');setTimeout(()=>go(2),650)}
+function choice(t){document.getElementById('answer').textContent=t}
+function blow(){document.getElementById('cake').textContent='🍰';document.getElementById('wish').textContent='Wish made. ✨';document.getElementById('final').classList.remove('hidden');confetti()}
+function confetti(){for(let i=0;i<65;i++){let x=document.createElement('span');x.className='petal';x.textContent=['🌸','💗','✨','💕','🎀'][Math.floor(Math.random()*5)];x.style.left=Math.random()*100+'vw';x.style.animationDuration=2+Math.random()*2.5+'s';x.style.fontSize=12+Math.random()*20+'px';document.body.appendChild(x);setTimeout(()=>x.remove(),5000)}}
+for(let i=0;i<35;i++){let s=document.createElement('span');s.className='star';s.textContent=Math.random()>.5?'✦':'·';s.style.left=Math.random()*100+'vw';s.style.top=Math.random()*100+'vh';s.style.fontSize=8+Math.random()*14+'px';s.style.animationDelay=-Math.random()*3+'s';document.body.appendChild(s)}
+
+const loveSlider=document.getElementById('loveSlider');
+const sliderFill=document.getElementById('sliderFill');
+const sliderHeart=document.getElementById('sliderHeart');
+const sliderNext=document.getElementById('sliderNext');
+const sliderMessage=document.getElementById('sliderMessage');
+
+function updateLoveSlider(){
+  const v=Number(loveSlider.value);
+  sliderFill.style.width=v+'%';
+  sliderHeart.style.left=v+'%';
+  if(v<100){
+    sliderNext.disabled=true;
+    sliderMessage.textContent=v<50?'Keep going... I mean A LOT. 🥺':v<90?'Almost there... don’t stop now. 💗':'Just a tiny bit more...';
+  }else{
+    sliderNext.disabled=false;
+    sliderNext.classList.remove('locked');
+    sliderMessage.textContent='Okay. That’s more like it. You may continue. ❤️';
+    confetti();
+  }
+}
+loveSlider.addEventListener('input',updateLoveSlider);
+
+function startMusic(){
+  const a=document.getElementById('musicAudio');
+  a.volume=.55;
+  a.play().then(()=>{playing=true;document.getElementById('music').textContent='❚❚'}).catch(()=>{});
+}
+function toggleMusic(){
+  const a=document.getElementById('musicAudio');
+  if(a.paused){startMusic()}else{a.pause();playing=false;document.getElementById('music').textContent='♫'}
+}
+
+
+function unlock(){
+  const value = document.getElementById('password').value.trim().toLowerCase();
+  const wrong = document.getElementById('wrong');
+  if(value === 'malulu'){
+    document.getElementById('gate').classList.add('hide');
+    setTimeout(startMusic,350);
+  }else{
+    wrong.textContent = 'Think 🤔 Preelulu...';
+    const input = document.getElementById('password');
+    input.animate([
+      {transform:'translateX(-7px)'},{transform:'translateX(7px)'},
+      {transform:'translateX(-5px)'},{transform:'translateX(5px)'},
+      {transform:'translateX(0)'}
+    ],{duration:350});
+  }
+}
+document.getElementById('password').addEventListener('keydown',e=>{
+  if(e.key==='Enter') unlock();
+});
+</script>
+</body></html>
